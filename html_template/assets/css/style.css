@@ -308,7 +308,7 @@ a {
 }
 
 a:hover {
-  color: #F81781;
+  color: #05386D;
 }
 
 a:not([href]):not([tabindex]) {
@@ -527,13 +527,13 @@ input:-webkit-autofill:active {
 ::-moz-selection {
   text-shadow: none;
   color: #ffffff;
-  background-color: #F81781 !important;
+  background-color: #05386D !important;
 }
 
 ::selection {
   text-shadow: none;
   color: #ffffff;
-  background-color: #F81781 !important;
+  background-color: #05386D !important;
 }
 
 ::-webkit-input-placeholder {
@@ -874,15 +874,15 @@ small {
 }
 
 .c1, .header-main ul.nav ul li a:hover, .header-main ul.nav ul li a.current-menu-children {
-  color: #F81781;
+  color: #05386D;
 }
 
 .c1-bg, .header-main ul.nav ul li a:after {
-  background-color: #F81781;
+  background-color: #05386D;
 }
 
 .c1-bo {
-  border-color: #F81781 !important;
+  border-color: #05386D !important;
 }
 
 .c2 {
@@ -941,11 +941,11 @@ a, .owl-carousel .owl-nav button, svg path, svg g, i, .tt_timetable tbody td,
 .pagination li span:hover,
 .pagination li span.active, .socials a:hover, .widget.widget_recent_entries ul li .posted-by,
 .widget.widget_recent_entries ul li .posted-on, .widget.widget_recent_entries ul li .post-title a:hover, .widget.widget_tag_cloud .tagcloud a:hover, .widget.widget_categories ul li a:hover, .widget.widget_about .contact-list li i, .widget.widget_about .contact-list li span, .widget.widget_contact_info .contact-list li i, .widget.widget_social_links .socials a:hover, .section-title .subtitle, .page-title ul li:not(:last-child):after, .page-title ul li.active, .header-top .social-links a:hover i, .header-main ul li a.current-menu-parent, .header-main ul li a:hover, .single-post .post-content .post-title:hover, .post-details .entry-header .entry-meta li a:hover, .post-navigation .nav-link .nav-title:hover, .banner-content h6, .banner-content h4, .single-service.service-box .content h3:hover, .product-details-content .price, .circle, .product-details-content .quantity .input-group .form-control, .single-price .price-head h4, .single-price.active .price-body .btn, .single-feature.active .icon svg path, .single-feature.active .icon i, .quantity .input-text {
-  color: #F81781;
+  color: #05386D;
 }
 
 .owl-carousel.testimonial-carousel2 .owl-nav button, .video-btn, .btn, .btn.btn-white:hover, .btn.btn-black:hover, .btn-circle:hover, .section-title .subtitle:after, .section-title.style--three .subtitle2:after, .back-to-top, .preloader .spinner-grow, .header.style--two .header-main ul.nav > li > a:before, .header.style--two .header-main ul.nav > li > a:after, .single-post .post-thumb-wrap .posted-on, .woocommerce-tabs .tab-btn li button.active, .woocommerce-tabs .tab-btn li button:hover, .single-price.active, .single-price-content .duration {
-  background-color: #F81781;
+  background-color: #05386D;
 }
 
 .tt_timetable tbody td.sculpt:hover .event_header,
@@ -1237,11 +1237,11 @@ table, .hz-list li, .pagination li a,
 }
 
 .owl-carousel .owl-nav button:hover {
-  border-color: #F81781 !important;
+  border-color: #05386D !important;
 }
 
 .owl-carousel .owl-nav button:hover svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .owl-carousel.banner-slider .owl-nav .owl-next .circular-progress {
@@ -2017,7 +2017,7 @@ table, .hz-list li, .pagination li a,
 }
 
 .pagination li:last-child a:hover svg path, .pagination li:last-child span:hover svg path, .pagination li:first-child a:hover svg path, .pagination li:first-child span:hover svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .pagination li a,
@@ -2041,19 +2041,19 @@ table, .hz-list li, .pagination li a,
 
 .pagination li a.current,
 .pagination li span.current {
-  border-color: #F81781;
+  border-color: #05386D;
 }
 
 .pagination li a:hover, .pagination li a.active,
 .pagination li span:hover,
 .pagination li span.active {
-  border-color: #F81781;
+  border-color: #05386D;
 }
 
 .pagination li a:hover svg path, .pagination li a.active svg path,
 .pagination li span:hover svg path,
 .pagination li span.active svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .pagination li.nav-btn a.disabled {
@@ -2458,7 +2458,7 @@ blockquote {
 }
 
 .socials a:hover {
-  border-color: #F81781;
+  border-color: #05386D;
 }
 
 .socials.banner-socials a {
@@ -3527,7 +3527,7 @@ textarea.form-control {
 }
 
 .widget.widget_social_links .socials a:hover {
-  border-color: #F81781;
+  border-color: #05386D;
 }
 
 .widget.widget_search .theme-input-group {
@@ -3551,7 +3551,7 @@ textarea.form-control {
 }
 
 .widget.widget_search button svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .service-sidebar .widget {
@@ -4304,10 +4304,10 @@ textarea.form-control {
 .header.style--two .header-main ul.nav > li > a:after {
   height: 10px;
   top: 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f81781), to(rgba(255, 255, 255, 0)));
-  background: -o-linear-gradient(top, #f81781 0%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to bottom, #f81781 0%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f81781', endColorstr='#00ffffff',GradientType=0 );
+  background: -webkit-gradient(linear, left top, left bottom, from(#05386D), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, #05386D 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, #05386D 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05386D', endColorstr='#00ffffff',GradientType=0 );
   opacity: 0.1;
 }
 
@@ -5740,7 +5740,7 @@ textarea.form-control {
 }
 
 .circular-progress circle:nth-of-type(2) {
-  stroke: #F81781;
+  stroke: #05386D;
   stroke-dasharray: 251.4285714286;
   stroke-dashoffset: 75.4285714286;
 }
@@ -6168,11 +6168,11 @@ textarea.form-control {
 }
 
 .single-service.service-box:hover .icon svg path, .single-service.service-box.active .icon svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .single-service.service-box:hover .icon svg.stroke path, .single-service.service-box.active .icon svg.stroke path {
-  stroke: #F81781;
+  stroke: #05386D;
 }
 
 .card-box-style .single-service {
@@ -6899,7 +6899,7 @@ textarea.form-control {
 }
 
 .product-details-content .quantity .plus:hover svg path, .product-details-content .quantity .minus:hover svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .product-details-content .quantity .plus {
@@ -6956,7 +6956,7 @@ textarea.form-control {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 5px;
-  border: 1px dashed #F81781;
+  border: 1px dashed #05386D;
 }
 
 /* ************************
@@ -7047,11 +7047,11 @@ textarea.form-control {
 }
 
 .single-price.active .price-body .btn svg g {
-  stroke: #F81781;
+  stroke: #05386D;
 }
 
 .single-price.active .price-body .btn svg path {
-  fill: #F81781;
+  fill: #05386D;
   stroke: transparent;
 }
 
@@ -7488,7 +7488,7 @@ textarea.form-control {
 }
 
 .single-feature.active .icon svg path, .single-feature.active .icon i {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .feature-bg-control {
@@ -7640,7 +7640,7 @@ textarea.form-control {
 }
 
 .map-wrap .map-img-wrap:after {
-  background-color: #F81781;
+  background-color: #05386D;
   width: 2px;
   height: 240px;
   left: 50%;
@@ -7686,7 +7686,7 @@ textarea.form-control {
   display: inline-block;
   height: 40px;
   width: 40px;
-  border: 1px dashed #F81781;
+  border: 1px dashed #05386D;
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
@@ -7754,7 +7754,7 @@ textarea.form-control {
 }
 
 .cart_table .product-remove svg:hover path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .cart_table .coupon {
@@ -8014,7 +8014,7 @@ a {
 }
 
 a:hover {
-  color: #F81781;
+  color: #05386D;
 }
 
 a:not([href]):not([tabindex]) {
@@ -8233,13 +8233,13 @@ input:-webkit-autofill:active {
 ::-moz-selection {
   text-shadow: none;
   color: #ffffff;
-  background-color: #F81781 !important;
+  background-color: #05386D !important;
 }
 
 ::selection {
   text-shadow: none;
   color: #ffffff;
-  background-color: #F81781 !important;
+  background-color: #05386D !important;
 }
 
 ::-webkit-input-placeholder {
@@ -8580,15 +8580,15 @@ small {
 }
 
 .c1, .header-main ul.nav ul li a:hover, .header-main ul.nav ul li a.current-menu-children {
-  color: #F81781;
+  color: #05386D;
 }
 
 .c1-bg, .header-main ul.nav ul li a:after {
-  background-color: #F81781;
+  background-color: #05386D;
 }
 
 .c1-bo {
-  border-color: #F81781 !important;
+  border-color: #05386D !important;
 }
 
 .c2 {
@@ -8647,11 +8647,11 @@ a, .owl-carousel .owl-nav button, svg path, svg g, i, .tt_timetable tbody td,
 .pagination li span:hover,
 .pagination li span.active, .socials a:hover, .widget.widget_recent_entries ul li .posted-by,
 .widget.widget_recent_entries ul li .posted-on, .widget.widget_recent_entries ul li .post-title a:hover, .widget.widget_tag_cloud .tagcloud a:hover, .widget.widget_categories ul li a:hover, .widget.widget_about .contact-list li i, .widget.widget_about .contact-list li span, .widget.widget_contact_info .contact-list li i, .widget.widget_social_links .socials a:hover, .section-title .subtitle, .page-title ul li:not(:last-child):after, .page-title ul li.active, .header-top .social-links a:hover i, .header-main ul li a.current-menu-parent, .header-main ul li a:hover, .single-post .post-content .post-title:hover, .post-details .entry-header .entry-meta li a:hover, .post-navigation .nav-link .nav-title:hover, .banner-content h6, .banner-content h4, .single-service.service-box .content h3:hover, .product-details-content .price, .circle, .product-details-content .quantity .input-group .form-control, .single-price .price-head h4, .single-price.active .price-body .btn, .single-feature.active .icon svg path, .single-feature.active .icon i, .quantity .input-text {
-  color: #F81781;
+  color: #05386D;
 }
 
 .owl-carousel.testimonial-carousel2 .owl-nav button, .video-btn, .btn, .btn.btn-white:hover, .btn.btn-black:hover, .btn-circle:hover, .section-title .subtitle:after, .section-title.style--three .subtitle2:after, .back-to-top, .preloader .spinner-grow, .header.style--two .header-main ul.nav > li > a:before, .header.style--two .header-main ul.nav > li > a:after, .single-post .post-thumb-wrap .posted-on, .woocommerce-tabs .tab-btn li button.active, .woocommerce-tabs .tab-btn li button:hover, .single-price.active, .single-price-content .duration {
-  background-color: #F81781;
+  background-color: #05386D;
 }
 
 .tt_timetable tbody td.sculpt:hover .event_header,
@@ -8943,11 +8943,11 @@ table, .hz-list li, .pagination li a,
 }
 
 .owl-carousel .owl-nav button:hover {
-  border-color: #F81781 !important;
+  border-color: #05386D !important;
 }
 
 .owl-carousel .owl-nav button:hover svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .owl-carousel.banner-slider .owl-nav .owl-next .circular-progress {
@@ -9723,7 +9723,7 @@ table, .hz-list li, .pagination li a,
 }
 
 .pagination li:last-child a:hover svg path, .pagination li:last-child span:hover svg path, .pagination li:first-child a:hover svg path, .pagination li:first-child span:hover svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .pagination li a,
@@ -9747,19 +9747,19 @@ table, .hz-list li, .pagination li a,
 
 .pagination li a.current,
 .pagination li span.current {
-  border-color: #F81781;
+  border-color: #05386D;
 }
 
 .pagination li a:hover, .pagination li a.active,
 .pagination li span:hover,
 .pagination li span.active {
-  border-color: #F81781;
+  border-color: #05386D;
 }
 
 .pagination li a:hover svg path, .pagination li a.active svg path,
 .pagination li span:hover svg path,
 .pagination li span.active svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .pagination li.nav-btn a.disabled {
@@ -10164,7 +10164,7 @@ blockquote {
 }
 
 .socials a:hover {
-  border-color: #F81781;
+  border-color: #05386D;
 }
 
 .socials.banner-socials a {
@@ -11233,7 +11233,7 @@ textarea.form-control {
 }
 
 .widget.widget_social_links .socials a:hover {
-  border-color: #F81781;
+  border-color: #05386D;
 }
 
 .widget.widget_search .theme-input-group {
@@ -11257,7 +11257,7 @@ textarea.form-control {
 }
 
 .widget.widget_search button svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .service-sidebar .widget {
@@ -12010,10 +12010,10 @@ textarea.form-control {
 .header.style--two .header-main ul.nav > li > a:after {
   height: 10px;
   top: 2px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f81781), to(rgba(255, 255, 255, 0)));
-  background: -o-linear-gradient(top, #f81781 0%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to bottom, #f81781 0%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f81781', endColorstr='#00ffffff',GradientType=0 );
+  background: -webkit-gradient(linear, left top, left bottom, from(#05386D), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, #05386D 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, #05386D 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05386D', endColorstr='#00ffffff',GradientType=0 );
   opacity: 0.1;
 }
 
@@ -13446,7 +13446,7 @@ textarea.form-control {
 }
 
 .circular-progress circle:nth-of-type(2) {
-  stroke: #F81781;
+  stroke: #05386D;
   stroke-dasharray: 251.4285714286;
   stroke-dashoffset: 75.4285714286;
 }
@@ -13874,11 +13874,11 @@ textarea.form-control {
 }
 
 .single-service.service-box:hover .icon svg path, .single-service.service-box.active .icon svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .single-service.service-box:hover .icon svg.stroke path, .single-service.service-box.active .icon svg.stroke path {
-  stroke: #F81781;
+  stroke: #05386D;
 }
 
 .card-box-style .single-service {
@@ -14605,7 +14605,7 @@ textarea.form-control {
 }
 
 .product-details-content .quantity .plus:hover svg path, .product-details-content .quantity .minus:hover svg path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .product-details-content .quantity .plus {
@@ -14662,7 +14662,7 @@ textarea.form-control {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 5px;
-  border: 1px dashed #F81781;
+  border: 1px dashed #05386D;
 }
 
 /* ************************
@@ -14753,11 +14753,11 @@ textarea.form-control {
 }
 
 .single-price.active .price-body .btn svg g {
-  stroke: #F81781;
+  stroke: #05386D;
 }
 
 .single-price.active .price-body .btn svg path {
-  fill: #F81781;
+  fill: #05386D;
   stroke: transparent;
 }
 
@@ -15194,7 +15194,7 @@ textarea.form-control {
 }
 
 .single-feature.active .icon svg path, .single-feature.active .icon i {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .feature-bg-control {
@@ -15346,7 +15346,7 @@ textarea.form-control {
 }
 
 .map-wrap .map-img-wrap:after {
-  background-color: #F81781;
+  background-color: #05386D;
   width: 2px;
   height: 240px;
   left: 50%;
@@ -15392,7 +15392,7 @@ textarea.form-control {
   display: inline-block;
   height: 40px;
   width: 40px;
-  border: 1px dashed #F81781;
+  border: 1px dashed #05386D;
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
@@ -15460,7 +15460,7 @@ textarea.form-control {
 }
 
 .cart_table .product-remove svg:hover path {
-  fill: #F81781;
+  fill: #05386D;
 }
 
 .cart_table .coupon {
