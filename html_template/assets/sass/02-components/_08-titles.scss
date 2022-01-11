@@ -1,0 +1,193 @@
+/* ************************
+   02.8: Titles
+   ********************* */
+
+   .section-title {
+      padding-left: 45px;
+      position: relative;
+      margin-bottom: 56px;
+      &.style--two {
+         margin-bottom: 40px;
+      }
+      @include mobileLg {
+         br {
+            display: none;
+         }
+      }
+      @include mobileMd {
+         padding-left: 30px;
+      }
+      .subtitle {
+         @extend %c1;
+         font-size: 13px;
+         text-transform: uppercase;
+         @extend %heading-font;
+         display: inline-block;
+         transform: rotate(90deg);
+         position: absolute;
+         left: 10px;
+         top: 44px;
+         transform-origin: 0 0;
+         line-height: 1;
+         &:after {
+            position: absolute;
+            left: -40px;
+            top: 44%;
+            transform: translateY(-50%);
+            content: "";
+            @extend %c1-bg;
+            width: 32px;
+            height: 1px;
+         }
+      }
+      h2 {
+         margin-top: -4px;
+         margin-bottom: 17px;
+         @include mobileSm {
+            font-size: 36px;
+         }
+      }
+      &.style--three {
+         padding-left: 40px;
+         margin-bottom: 53px;
+         .subtitle {
+            @extend %title-color;
+            top: 1px;
+            letter-spacing: 3px;
+            &:after {
+               display: none;
+            }
+         }
+         .subtitle2 {
+            @extend %semi-bold;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            display: inline-block;
+            position: relative;
+            &:after {
+               width: 35px;
+               height: 1px;
+               @extend %c1-bg;
+               right: -55px;
+               position: absolute;
+               top: 42%;
+               transform: translateY(-50%);
+               content: "";
+            }
+         }
+         h2 {
+            margin: 0;
+         }
+      }
+      &.style--four {
+         padding-left: 0px;
+         margin-top: -6px;
+         margin-bottom: 42px;
+         .subtitle {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+            font-size: 18px;
+            @extend %semi-bold;
+            color: #F79457;
+            margin-bottom: 17px;
+            &:after {
+               left: auto;
+               right: -50px;
+               background-color: #F79457;
+            }
+         }
+         h2 {
+            margin-bottom: 20px;
+         }
+
+         &.mb-style2 {
+            margin-bottom: 54px;
+         }
+      }
+      &.style--five {
+         margin-top: -4px;
+         .subtitle {
+            @extend %title-color;
+            top: 49px;
+            &:after {
+               @extend %title-color-bg;
+               left: -45px;
+            }
+         }
+         
+         .subtitle2 {
+            @extend %semi-bold;
+            margin-bottom: 5px;
+            display: inline-block;
+            position: relative;
+            font-size: 42px;
+            &:after {
+               width: 35px;
+               height: 1px;
+               @extend %title-color-bg;
+               right: -45px;
+               position: absolute;
+               top: 45%;
+               transform: translateY(-50%);
+               content: "";
+            }
+         }
+         
+         h2 {
+            @extend %bold;
+            margin-bottom: 22px;
+         }
+         p {
+            &:not(:last-child) {
+               margin-bottom: 42px;
+            }
+         }
+         .btn {
+            margin: 0;
+         }
+      }
+      &.style--six {
+         padding-left: 45px;
+         .subtitle {
+            color: #FF0000;
+            top: 47px;
+            &:after {
+               background-color: #FF0000;
+               left: -45px;
+            }
+         }
+         
+         .subtitle2 {
+            @extend %semi-bold;
+            margin-bottom: 12px;
+            display: inline-block;
+            text-transform: uppercase;
+            position: relative;
+            &:after {
+               width: 35px;
+               height: 1px;
+               background-color: #FF0000;
+               right: -45px;
+               position: absolute;
+               top: 40%;
+               transform: translateY(-50%);
+               content: "";
+            }
+         }
+         
+         h2 {
+            @extend %bold;
+            margin-bottom: 22px;
+         }
+         p {
+            &:not(:last-child) {
+               margin-bottom: 42px;
+            }
+         }
+         .btn {
+            margin: 0;
+         }
+      }
+   }

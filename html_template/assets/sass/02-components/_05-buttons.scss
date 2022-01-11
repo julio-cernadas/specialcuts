@@ -1,0 +1,252 @@
+/* ************************
+   02.5: Buttons
+   ********************* */
+
+   .btn {
+      font-size: 14px;
+      text-transform: uppercase;
+      z-index: 1;
+      @extend %white;
+      @extend %c1-bg;
+      @extend %medium;
+      @extend %trans3;
+      @extend %radius-50;
+      @extend %heading-font;
+      line-height: 1;
+      padding: 5px;
+      padding-left: 30px;
+      box-shadow: none;
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      span {
+         position: relative;
+         top: 2px;
+      }
+
+      svg, i, img {
+         margin-left: 15px;
+      }
+
+      &:hover {
+         @extend %title-color-bg;
+         @extend %white;
+      }
+      &:focus {
+         box-shadow: none;
+      }
+      &.style2 {
+         padding: 20px 34px;
+      }
+      &.btn-lg {
+         padding: 20px 40px;
+      }
+      &.btn-white {
+         @extend %title-color;
+         @extend %white-bg;
+         svg {
+            g {
+               stroke: $title-color;
+            }
+            path {
+               fill: $title-color;
+               stroke: transparent;
+            }
+         }
+         &:hover {
+            @extend %white;
+            @extend %c1-bg;
+            svg {
+               g {
+                  stroke: $white;
+               }
+               path {
+                  fill: $white;
+                  stroke: transparent;
+               }
+            }
+         }
+      }
+      &.btn-black {
+         @extend %title-color-bg;
+         &:hover {
+            @extend %c1-bg;
+         }
+      }
+      &.style3 {
+         background-color: #F79457;
+         border-radius: 0 5px 0 10px;
+         font-weight: $medium;
+         svg {
+            width: 44px;
+            height: 44px;
+            padding: 14px;
+            border-radius: 0 5px 0 0;
+            @extend %white-bg;
+            path {
+               fill: #F79457;
+            }
+         }
+         &:hover {
+            background-color: $title-color;
+            svg {
+               path {
+                  fill: $title-color;
+               }
+            }
+         }
+         &.btn-black {
+            background-color: $title-color;
+            svg {
+               path {
+                  fill: $title-color;
+               }
+            }
+            &:hover {
+               background-color: #F79457;
+               svg {
+                  path {
+                     fill: #F79457;
+                  }
+               }
+            }
+         }
+      }
+      &.style4 {
+         @extend %title-color-bg;
+         padding-left: 24px;
+         span {
+            top: 1px;
+         }
+         svg {
+            width: 45px;
+            height: 45px;
+            padding: 14px;
+            @extend %radius;
+            @extend %white-bg;
+
+         }
+         &:hover {
+            background-color: #6A1A9A;
+            svg {
+               path {
+                  fill: #6A1A9A;
+               }
+            }
+         }
+         &.riv {
+            background-color: #6A1A9A;
+            svg {
+               path {
+                  fill: #6A1A9A;
+               }
+            }
+            &:hover {
+               @extend %title-color-bg;
+               svg {
+                  path {
+                     fill: $title-color;
+                  }
+               }
+            }
+         }
+      }
+      &.style5 {
+         background-color: #FF0000;
+         padding-left: 24px;
+         span {
+            top: 1px;
+         }
+         svg {
+            width: 45px;
+            height: 45px;
+            padding: 14px;
+            @extend %radius;
+            @extend %white-bg;
+            path {
+               fill: #FF0000;
+            }
+
+         }
+         &:hover {
+            @extend %title-color-bg;
+            svg {
+               path {
+                  fill: $title-color;
+               }
+            }
+         }
+      }
+      &.btn-sm {
+         font-size: 12px;
+         padding: 4px;
+         padding-left: 24px;
+         svg {
+            width: 35px;
+            height: 35px;
+         }
+         span {
+            top: 1px;
+         }
+      }
+   }
+
+   //Button Circle
+   .btn-circle {
+      width: 45px;
+      height: 45px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      @extend %title-color-bg;
+      @extend %radius;
+      &:hover {
+         @extend %c1-bg;
+      }
+   }
+
+   .cart-btn {
+      position: relative;
+      .cart-count {
+         width: 18px;
+         height: 18px;
+         font-size: 11px;
+         @extend %radius;
+         @extend %white-bg;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         color: #F79457;
+         position: relative;
+         margin-left: -11px;
+         right: 0;
+         top: -4px;
+      }
+   }
+
+   .duration-btn {
+      font-size: 13px;
+      @extend %title-color;
+      @extend %trans3;
+      background-color: #F79457;
+      border-radius: 0 50px 50px 26px;
+      @extend %heading-font;
+      line-height: 1;
+      padding-left: 22px;
+      box-shadow: none;
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+      height: 30px;
+      svg {
+         border: 1px solid $white;
+         margin-left: 12px;
+         height: 30px;
+         width: 30px;
+         padding: 6px;
+         @extend %radius;
+      }
+   }

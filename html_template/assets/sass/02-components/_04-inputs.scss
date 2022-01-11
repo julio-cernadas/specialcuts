@@ -1,0 +1,137 @@
+/* ************************
+   03.4: Inputs
+   ********************* */
+
+   .input-group {
+      &.style--two {
+         position: relative;
+         &:after {
+            position: absolute;
+            content: "\f107";
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: calc(100% - 20px);
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            z-index: 3;
+            pointer-events: none;
+            @extend %trans3;
+            @extend %title-color;
+            background-color: rgba($c1, 0.2);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+         }
+      }
+   }
+
+   .form-control {
+      border: none;
+      height: 50px;
+      border-radius: 0px;
+      font-size: 14px;
+      @extend %title-color;
+      padding: 10px 25px;
+      margin-bottom: 20px;
+      &:focus {
+         box-shadow: none;
+      }
+   }
+
+   textarea.form-control {
+      height: 170px;
+   }
+
+   .newsletter-form {
+      .theme-input-group {
+         display: flex;
+         max-width: 540px;
+         overflow: hidden;
+         @extend %radius-50;
+         margin: 0 auto;
+         .form-control {
+            margin-bottom: 0;
+            height: 60px;
+         }
+
+         .btn {
+            border-radius: 0px;
+            padding: 10px 28px;
+            @extend %semi-bold;
+         }
+      }
+      &.style--two {
+         .theme-input-group {
+            .btn {
+               @extend %title-color-bg;
+               &:hover {
+                  background-color: #F79457;
+               }
+            }
+         }
+      }
+      &.style--three {
+         .theme-input-group {
+            .btn {
+               background-color: #6A1A9A;
+               @extend %semi-bold;
+               &:hover {
+                  @extend %title-color-bg;
+               }
+            }
+         }
+      }
+      &.style--four {
+         .theme-input-group {
+            .btn {
+               background-color: #FF0000;
+               @extend %semi-bold;
+               opacity: 1;
+               &:hover {
+                  opacity: .9;
+               }
+            }
+         }
+      }
+   }
+
+   .search-form,
+   .coming-soon-form {
+      max-width: 540px;
+      form {
+         display: flex;
+         align-items: center;
+         overflow: hidden;
+         border-radius: 50px;
+         input {
+            margin-bottom: 0;
+         }
+
+         button {
+            padding: 15px 25px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0px;
+            height: 50px;
+            svg {
+               margin: 0;
+            }
+         }
+      }
+   }
+
+   .coming-soon-form {
+      margin: 0 auto;
+      form {
+         input {
+           height: 60px;
+         }
+
+         button {
+            height: 60px;
+         }
+      }
+   }

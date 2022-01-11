@@ -1,0 +1,80 @@
+/* ************************
+   04.9: Contact
+   ********************* */
+
+    .quick-contact {
+        padding: 50px 30px 45px;
+        height: 100%;
+        @include tab {
+            margin-bottom: 60px;
+            height: auto;
+        }
+        @include mobileSm {
+            padding: 40px 15px;
+        }
+        h3 {
+            margin-bottom: 18px;
+        }
+        p {
+            font-size: 18px;
+        }
+
+        .socials {
+            padding-top: 35px;
+            margin-top: 31px;
+            border-top: 1px solid #E6E3E9;
+            a {
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+                &:not(:last-child) {
+                    margin-right: 16px;
+                }
+            }
+        }
+            
+    }
+
+    .contact-form-wrap,
+    .appointment-form-wrap {
+        padding: 44px 30px 45px;
+        @include mobileSm {
+            padding: 40px 15px 35px;
+        }
+
+        h3 {
+            margin-bottom: 30px;
+        }
+    }
+
+
+    .map-wrap {
+        .map-img-wrap {
+            margin-top: -53px;
+            position: relative;
+            text-align: center;
+            &:after {
+                background-color: #F81781;
+                width: 2px;
+                height: 240px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 100%;
+                position: absolute;
+                content: "";
+            }
+        }
+    }
+
+    .company-logo-carousel {
+        .company-logo {
+            border: 1px solid #EBEBEB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 180px;
+            img {
+                width: auto;
+            }
+        }
+    }

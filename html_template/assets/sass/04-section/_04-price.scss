@@ -1,0 +1,293 @@
+/* ************************
+   04.4: Price
+   ********************* */
+
+    .price-bg {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 100px;
+        @include medium {
+            padding-bottom: 120px;
+        }
+        @include tab {
+            padding-bottom: 60px;
+        }
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FFEFF7;
+            content: "";
+            z-index: -1;
+            @include customMin(1200) {
+                height: calc(100% - 100px);
+            }
+        }
+    }
+
+    .single-price {
+        text-align: center;
+        background-color: #FEF6F8;
+        background-image: url(../img/bg/price-bg.png);
+        @extend %trans3;
+        margin-bottom: 30px;
+
+        .price-head {
+            border-bottom: 1px solid $white;
+            padding: 28px 15px;
+            position: relative;
+            h3 {
+                font-size: 30px;
+                margin-bottom: 12px;
+                @extend %trans3;
+            }
+            h4 {
+                @extend %c1;
+                @extend %medium;
+                @extend %trans3;
+            }
+            &:before, &:after {
+                width: 11px;
+                height: 11px;
+                @extend %white-bg;
+                background-color: $white;
+                @extend %radius;
+                left: -5px;
+                bottom: -5px;
+                position: absolute;
+                content: "";
+            }
+            &:after {
+                left: auto;
+                right: -5px;
+            }
+        }
+        .price-body {
+            padding: 22px 15px 45px;
+            ul {
+                @extend %list-unstyled;
+                padding-bottom: 26px;
+                li {
+                    @extend %trans3;
+                    &:not(:last-child) {
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+        }
+        &.active {
+            @extend %c1-bg;
+            background-image: url(../img/bg/price-active-bg.png);
+            .price-head {
+                h3,
+                h4 {
+                    @extend %white;
+                }
+            }
+            .price-body {
+                ul {
+                    li {
+                        @extend %white;
+                    }
+                }
+                .btn {
+                    @extend %white-bg;
+                    @extend %c1;
+                    svg {
+                        g {
+                           stroke: $c1;
+                        }
+                        path {
+                           fill: $c1;
+                           stroke: transparent;
+                        }
+                    }
+                    &:hover {
+                        @extend %title-color-bg;
+                        @extend %white;
+                        svg {
+                            g {
+                            stroke: $white;
+                            }
+                            path {
+                            fill: $white;
+                            stroke: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            font-size: 12px;
+            padding: 4px;
+            padding-left: 20px;
+            span {
+                top: 1px;
+            }
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    .price-tab {
+        @include tab {
+            margin-bottom: 40px;
+        }
+        .tab-btn {
+            &.active {
+                @extend %white-bg;
+                @extend %box-shadow2;
+            }
+        }
+    }
+
+    .price-tab-content {
+        padding-left: 23px;
+        @include customMin(1200) {
+            margin-bottom: -100px;
+        }
+        @include medium {
+            padding-left: 0;
+        }
+        .tab-pane {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .single-price-content {
+        padding: 30px 30px 27px;
+        align-items: center;
+        @include mobileSm {
+            padding: 20px 15px 17px;
+        }
+        h4 {
+            margin-bottom: 10px;
+            @extend %semi-bold;
+        }
+        p {
+            max-width: 350px;
+        }
+        .duration {
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 5px 20px;
+            @extend %c1-bg;
+            @extend %radius-50;
+            @extend %white;
+        }
+        .left-content {
+            padding-right: 20px;
+        }
+
+        .right-content {
+            text-align: center;
+            .price {
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    /* Single Price Style2 */
+    .single-price-style2 {
+        margin-bottom: 50px;
+        margin-right: 20px;
+        @extend %white-bg;
+        position: relative;
+        @extend %trans3;
+        z-index: 1;
+        &:after {
+            height: calc(100% + 20px);
+            width: 100%;
+            left: auto;
+            right: -20px;
+            top: 0;
+            position: absolute;
+            content: "";
+            background-color: #F7F7F7;
+            z-index: -1;
+        }
+
+        .price-head {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            &:after {
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+                content: "";
+                background: -moz-linear-gradient(top,  rgba(106,26,154,0) 0%, rgba(106,26,154,1) 100%);
+                background: -webkit-linear-gradient(top,  rgba(106,26,154,0) 0%,rgba(106,26,154,1) 100%);
+                background: linear-gradient(to bottom,  rgba(106,26,154,0) 0%,rgba(106,26,154,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006a1a9a', endColorstr='#6a1a9a',GradientType=0 );
+            }
+
+            .head-content {
+                position: absolute;
+                z-index: 2;
+                bottom: 30px;
+                left: 30px;
+                h3, h4 {
+                    @extend %white;
+                }
+                h3 {
+                    font-size: 36px;
+                    margin-bottom: 7px;
+                }
+                h4 {
+                    @extend %regular;
+                }
+            }
+        }
+
+        .price-body {
+            @extend %white-bg;
+            padding: 27px 30px 40px;
+            ul {
+                @extend %list-unstyled;
+                margin-bottom: 30px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &:not(:last-child) {
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+        }
+        .btn {
+            padding: 4px;
+            padding-left: 24px;
+            font-size: 12px;
+            svg {
+                width: 35px;
+                height: 35px;
+                padding: 10px;
+            }
+        }
+        &:hover {
+            @extend %box-shadow;
+        }
+
+        &.style--two {
+            .price-head {
+                &:after {
+                    background: -moz-linear-gradient(top,  rgba(255,0,0,0) 30%, rgba(255,0,0,0.7) 100%);
+                    background: -webkit-linear-gradient(top,  rgba(255,0,0,0) 30%,rgba(255,0,0,0.7) 100%);
+                    background: linear-gradient(to bottom,  rgba(255,0,0,0) 30%,rgba(255,0,0,0.7) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006a1a9a', endColorstr='#6a1a9a',GradientType=0 );
+                }
+            }
+        }
+    }

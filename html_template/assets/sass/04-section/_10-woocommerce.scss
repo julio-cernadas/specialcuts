@@ -1,0 +1,229 @@
+/* ************************
+   04.10: Woocommerce
+   ********************* */
+
+.quantity {
+    .input-group {
+        align-items: center;
+        justify-content: center;
+    }
+    .input-text {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        border: 1px dashed $c1;
+        text-align: center;
+        line-height: 38px;
+        border-radius: 50%;
+        font-size: 16px;
+        font-weight: 900;
+        margin: 0px 10px !important;
+        border-radius: 50% !important;
+        @extend %c1;
+        padding-top: 2px;
+    }
+    .plus, .minus {
+        cursor: pointer;
+    }
+}
+
+.shop_table {
+    th, td {
+       border: 0;
+       border-bottom: 1px solid $border-color;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    }
+    th {
+       border-color: $border-color;
+    }
+    .cart-subtotal,
+    .order-total {
+        th {
+            border-color: $border-color;
+            &:first-child {
+                text-align: left;
+            }
+        }
+    }
+    thead {
+       th {
+          font-size: 18px;
+          @extend %bold;
+          @extend %title-color;
+       }
+    }
+    .product-name {
+       a {
+          @extend %bold;
+          &:not(:last-child) {
+             margin-right: 15px;
+          }
+       }
+    }
+    .form-control {
+        border: 1px solid $border-color;
+        border-radius: 50px;
+    }
+    .btn {
+        svg {
+            width: 35px;
+            height: 34px;
+        }
+    }
+ }
+
+.cart_table {
+    white-space: nowrap;
+    .product-name, .actions {
+        padding-left: 0;
+    }
+    .product-subtotal,
+    .product-remove {
+        text-align: center;
+    }
+    .product-remove {
+        svg {
+            &:hover {
+                path {
+                    fill: $c1;
+                }
+            }
+        }
+    }
+    .coupon {
+        max-width: 360px;
+        .form-group {
+            display: flex;
+            .form-control {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .cart-subtotal {
+        font-size: 17px;
+        @extend %semi-bold;
+        @extend %title-color;
+        margin-right: 10px;
+    }
+    .cart-subtotal-wrap {
+        font-size: 17px;
+        @extend %title-color;
+        @extend %semi-bold;
+    }
+}
+
+.cart-collaterals {
+    .shop_table {
+        th {
+            padding-left: 0;
+            font-size: 18px;
+            @extend %title-color;
+            @extend %semi-bold;
+        }
+        td {
+            text-align: right;
+            font-size: 18px;
+            @extend %semi-bold;
+            @extend %title-color;
+            padding-right: 0;
+        }
+    }
+    .wc-proceed-to-checkout {
+        margin-top: 30px;
+    }
+}
+
+/* Checkout */
+.billing-details-title {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $border-color;
+    @extend %bold;
+}
+
+.woocommerce-billing-fields {
+    p {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.woocommerce-additional-fields {
+    textarea {
+        height: 240px;
+        padding: 20px 25px;
+    }
+}
+
+.order-details {
+    .shop_table {
+        th, td {
+            padding: 17px 20px;
+        }
+        thead {
+            th {
+                border-top: 0px solid;
+                border-bottom: 1px solid $border-color;
+                font-size: 18px;
+                text-align: left;
+                padding-left: 0;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+        tbody, tfoot {
+            th {
+                font-size: 16px;
+                @extend %semi-bold;
+                padding-left: 0;
+                text-align: left;
+            }
+            td {
+                font-size: 16px;
+                @extend %text-color;
+                @extend %semi-bold;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+        tfoot {
+            th, td {
+                font-size: 18px;
+                @extend %title-color;
+            }
+        }
+    }
+}
+
+.checkout {
+    .order-details {
+        .shop_table {
+            thead {
+                th {
+                    font-size: 16px;
+                    @extend %semi-bold;
+                }
+            }
+        }
+    }
+}
+
+.woocommerce-checkout {
+    .form-control {
+        border: 1px solid $border-color;
+        padding: 10px 18px;
+    }
+    select.form-control {
+        -webkit-appearance: auto;
+        appearance: auto;
+    }
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: $border-color;
+}
