@@ -109,15 +109,15 @@ We may release future updates so it will overwrite this file. it's better and sa
   02: Sticky Nav
   ==========================*/
 
-  $(window).on("scroll", function () {
-    var scroll = $(window).scrollTop();
-
-    if (scroll < 180) {
-      $(".header-main.love-sticky").removeClass("sticky fixed-top fadeInDown animated");
-    } else {
-      $(".header-main.love-sticky").addClass("sticky fixed-top fadeInDown animated");
-    }
-  });
+  // $(window).on("scroll", function () {
+  //   var scroll = $(window).scrollTop();
+  //
+  //   if (scroll < 180) {
+  //     $(".header-main.love-sticky").removeClass("sticky fixed-top fadeInDown animated");
+  //   } else {
+  //     $(".header-main.love-sticky").addClass("sticky fixed-top fadeInDown animated");
+  //   }
+  // });
   /*========================
   03: Background Image
   ==========================*/
@@ -530,10 +530,10 @@ We may release future updates so it will overwrite this file. it's better and sa
   16: Pricing Active Class
   ====================================*/
 
-  $('.single-price, .single-feature, .single-specialist, .single-service.service-box').on('mouseenter', function () {
-    $('.single-price, .single-feature, .single-specialist, .single-service.service-box').removeClass('active');
-    $(this).addClass('active');
-  });
+  // $('.single-price, .single-feature, .single-specialist, .single-service.service-box').on('mouseenter', function () {
+  //   $('.single-price, .single-feature, .single-specialist, .single-service.service-box').removeClass('active');
+  //   $(this).addClass('active');
+  // });
   /*==================================
   17: Search Toggle
   ====================================*/
