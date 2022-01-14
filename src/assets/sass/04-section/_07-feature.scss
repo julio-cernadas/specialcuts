@@ -1,0 +1,42 @@
+/* ************************
+   04.7: Feature
+   ********************* */
+   .single-feature {
+      margin-bottom: 30px;
+      text-align: center;
+      padding: 60px 15px 55px;
+      @extend %trans3;
+      .icon {
+          margin-bottom: 35px;
+          img, svg, i {
+              width: auto;
+              margin: 0 auto;
+          }
+      }
+      .content {
+          h3 {
+              margin-bottom: 12px;
+          }
+          p {
+              max-width: 260px;
+              margin: 0 auto;
+          }
+      }
+      &.active {
+         @extend %white-bg;
+         @extend %box-shadow;
+         .icon {
+            svg path, i {
+                @extend %c1;
+                fill: $c1;
+            }
+         }
+      }
+    }
+
+    .feature-bg-control {
+        background-position: left;
+        @include tab {
+            background-position: center;
+        }
+    }

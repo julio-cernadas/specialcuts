@@ -1,0 +1,122 @@
+/* ************************
+   04.6: Testimonial
+   ********************* */
+    .testimonial {
+        padding-left: 20.7%;
+        overflow: hidden;
+        @include customMax(1470) {
+            padding-left: 12%;
+        }
+        @include medium {
+            padding-left: 10%;
+        }
+        @include customMax(1300) {
+            padding-left: 6%;
+        }
+        @include customMax(1250) {
+            padding-left: 3%;
+        }
+        @include mobileMd {
+            padding-left: 15px;
+        }
+    }
+
+    .testimonial-carousel {
+        .owl-stage-outer {
+            padding: 30px 0;
+            margin: -30px 0;
+        }
+    }
+
+    .single-testimonial-carousel {
+        @extend %box-shadow;
+        @extend %white-bg;
+        padding: 60px 38px;
+        text-align: center;
+        max-width: 350px;
+        .avatar {
+            margin-bottom: 35px;
+            img {
+                width: 75px;
+                height: 75px;
+                @extend %radius;
+                margin: 0 auto;
+            }
+        }
+        .content {
+            > h4 {
+                // @extend %medium;
+                @extend %regular;
+                margin-bottom: 30px;
+                line-height: 1.555;
+                position: relative;
+                z-index: 1;
+                font-style: italic;
+                &:after {
+                    width: 127px;
+                    height: 110px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 0;
+                    position: absolute;
+                    background-image: url(../img/icon/quotes.png);
+                    content: "";
+                    z-index: -1;
+                    opacity: 0.07;
+                }
+            }
+            .meta-info {
+                h3 {
+                    margin-bottom: 10px;
+                }
+                p {
+                    line-height: 1;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    .testimonial-single {
+        > img {
+            margin-bottom: 23px;
+            width: auto !important;
+        }
+        > p {
+            line-height: 1.666;
+            font-size: 18px;
+            margin-bottom: 28px;
+            max-width: 520px;
+        }
+
+        .meta-info {
+            display: flex;
+            align-items: center;
+            .thumb {
+                margin-right: 15px;
+                width: 95px;
+                height: 95px;
+                img {
+                    width: auto;
+                }
+            }
+            .content {
+                h3 {
+                    font-size: 30px;
+                    @include mobileSm {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    @extend %heading-font;
+                    @include mobileSm {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }

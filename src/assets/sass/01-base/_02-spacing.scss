@@ -1,0 +1,64 @@
+/* ************************
+   01.2: Padding/Margin
+   ********************* */
+// Paddings
+$p-list: 120, 90, 70, 50, 40;
+$tab: 60;
+
+// Padding Top
+@each $padding in $p-list {
+    .pt-#{$padding} {
+        padding-top: $padding + px;
+        @include tab{
+            @if $padding > $tab {
+                padding-top: ($padding - $tab) + px;
+            } @else {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+// Padding Bottom
+@each $padding in $p-list {
+    .pb-#{$padding} {
+        padding-bottom: $padding + px;
+        @include tab{
+            @if $padding > $tab {
+                padding-bottom: ($padding - $tab) + px;
+            } @else {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+
+$m-list: 60, 50, 40, 30;
+
+// Margin Top
+@each $margin in $m-list {
+    .mt-#{$margin} {
+        margin-top: $margin + px;
+    }
+}
+// Margin Bottom
+@each $margin in $m-list {
+    .mb-#{$margin} {
+        margin-bottom: $margin + px;
+    }
+}
+
+
+.res-mt {
+    @include mobileLg {
+        margin-top: -30px;
+    }
+}
+
+.mt-xl-100 {
+    margin-top: 100px;
+    @include customMax(1199) {
+        margin-top: 0;
+    }
+}

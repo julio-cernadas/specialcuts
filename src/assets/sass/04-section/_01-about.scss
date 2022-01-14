@@ -1,0 +1,284 @@
+/* ************************
+   04.1: About
+   ********************* */
+
+    .mobile-bg {
+        @include mobileLg {
+            padding-top: 60px;
+            position: relative;
+            z-index: 1;
+            &:after {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 83.4%;
+                background-color: #FFEFF7;
+                content: "";
+                z-index: -1;
+            }
+        }
+    }
+    .about-style3 {
+        background-color: #F8F3EF;
+        margin-top: 120px;
+        @include customMax(1200) {
+            margin-top: 80px;
+        }
+        @include tab {
+            margin-top: 0px;
+        }
+    }
+
+    .about-img {
+        position: relative;
+        @include tab {
+            margin-bottom: 60px;
+        }
+        &.style--two {
+            position: relative;
+            display: inline-block;
+            img {
+                margin-top: -240px;
+                @include tab {
+                    margin-top: 0;
+                }
+            }
+
+            .video-btn {
+                position: absolute;
+                left: 62%;
+                bottom: 19%;
+                @include tab {
+                    left: 58%;
+                    bottom: 8%;
+                }
+            }
+        }
+
+        &.fsalon-about-img {
+            margin-top: -220px;
+            text-align: right;
+            @include tab {
+                margin-top: 0;
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+
+        .about-img-top {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 60px;
+            display: inline-block;
+            @include tab {
+                display: none;
+            }
+            span {
+                position: absolute;
+                @extend %title-color;
+                text-transform: uppercase;
+                font-size: 13px;
+                left: -10px;
+                top: 120px;
+                transform: rotate(90deg);
+                transform-origin: 0 0;
+            }
+        }
+
+        .about-img-bottom {
+            position: relative;
+            z-index: 1;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            .video-btn {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:after {
+                width: calc(100% - 30px);
+                height: 60%;
+                left: 0;
+                bottom: 0;
+                background-color: #F7F7F7;
+                position: absolute;
+                content: "";
+                z-index: -1;
+            }
+            img {
+                @include tab {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .about-content {
+        padding-left: 40px;
+        @include tab {
+            padding-left: 0;
+        }
+        .btn {
+            margin-left: 50px;
+            @include mobileMd {
+                margin-left: 30px;
+            }
+        }
+
+        > h2 {
+            @extend %semi-bold;
+        }
+
+        .meta-wrap {
+            margin-top: 35px;
+            display: flex;
+            align-items: center;
+            @include mobileSm {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            > div {
+                &:not(:last-child) {
+                    position: relative;
+                    margin-right: 30px;
+                    padding-right: 30px;
+                    @include mobileSm {
+                        margin-right: 0;
+                        padding-right: 0;
+                        margin-bottom: 10px;
+                    }
+                    &:after {
+                        width: 2px;
+                        height: 60px;
+                        right: 0px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        content: "";
+                        background-image: url(../img/icon/line_shape.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        @include mobileSm {
+                           display: none;
+                        }
+                    }
+                }
+            }
+            .meta-info {
+                h3 {
+                    font-size: 30px;
+                    @extend %semi-bold;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+
+    .title-right-content {
+        padding: 38px 0px 98px 0px;
+        position: relative;
+        z-index: 1;
+        @include mobileLg {
+            display: none;
+        }
+        &:after {
+            position: absolute;
+            left: -30px;
+            top: -120px;
+            background-color: #FFEFF7;
+            width: 1000%;
+            height: 660px;
+            content: "";
+            z-index: -1;
+            @include tab {
+                left: 0;
+            }
+        }
+
+        p {
+            margin-bottom: 22px;
+            @extend %title-color;
+            line-height: 1.666;
+            font-size: 18px;
+        }
+    }
+
+    .about-left {
+        position: relative;
+        z-index: 1;
+        @include tab {
+            margin-bottom: 60px;
+        }
+    }
+
+    .gallery-box {
+        padding: 45px 28px;
+        width: 220px;
+        height: 220px;
+        margin-top: -160px;
+        position: relative;
+        .icon {
+            margin-bottom: 25px;
+        }
+        .content {
+            h4 {
+                @extend %white;
+                @extend %trans3;
+                @extend %semi-bold;
+                margin-bottom: 6px;
+                &:hover {
+                    @extend %title-color;
+                }
+            }
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+            a {
+                &:hover {
+                    svg {
+                        path {
+                            fill: $title-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about-right {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        .video-btn {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(38%, -50%);
+            @include mobileSm {
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    /* More About */
+    .more-about {
+        margin-bottom: 50px;
+        .thumb {
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            margin-top: 30px;
+            h3 {
+                margin-bottom: 14px;
+            }
+        }
+    }

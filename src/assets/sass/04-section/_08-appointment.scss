@@ -1,0 +1,78 @@
+/* ************************
+   04.8: Appointment
+   ********************* */
+
+    .appointment-content {
+        h3 {
+            margin-bottom: 26px;
+        }
+        .service-dates {
+            .input-group {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    content: "\f107";
+                    top: 0;
+                    right: 0;
+                    width: 50px;
+                    height: calc(100% - 20px);
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    z-index: 9;
+                    pointer-events: none;
+                    @extend %trans3;
+                    @extend %title-color;
+                    background-color: rgba($c1, 0.2);
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+        .beautain-date-select {
+            .input-group {
+                &:after {
+                    content: "";
+                }
+                .form-control {
+                    padding-right: 13.5px;
+                }
+            }
+            @-moz-document url-prefix() {
+                .input-group {
+                    &:after {
+                        content: "\f107";
+                    }
+                    .form-control {
+                        padding-right: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+    .appointment-form {
+        > div {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    /* CTA Content */
+    .cta-content {
+        h4 {
+            @extend %semi-bold;
+            margin-bottom: 16px;
+        }
+        h2 {
+            @extend %semi-bold;
+            margin-bottom: 17px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
