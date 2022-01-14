@@ -1054,7 +1054,7 @@ table, .hz-list li, .pagination li a,
 }
 
 .section-bg {
-  background-color: #FEF6F8;
+  background-color: #FAFAFA;
 }
 
 .spa-bg {
@@ -6727,7 +6727,7 @@ textarea.form-control {
 
 .woocommerce-tabs .woocommerce-Reviews .review-form {
   margin-top: 40px;
-  background-color: #FEF6F8;
+  background-color: #FAFAFA;
   padding: 40px 45px 45px;
 }
 
@@ -6999,7 +6999,7 @@ textarea.form-control {
 
 .single-price {
   text-align: center;
-  background-color: #FEF6F8;
+  background-color: #FAFAFA;
   background-image: url(../img/bg/price-bg.png);
   margin-bottom: 30px;
 }
@@ -7260,7 +7260,7 @@ textarea.form-control {
   right: 0;
   bottom: 0;
   width: 80%;
-  background-color: rgba(248, 23, 129, 0.8);
+  background-color: rgba(248, 23, 129, 0.2);
   padding: 28px 30px 26px;
   -webkit-transform: translate(100%, 100%);
   -ms-transform: translate(100%, 100%);
@@ -8760,7 +8760,7 @@ table, .hz-list li, .pagination li a,
 }
 
 .section-bg {
-  background-color: #FEF6F8;
+  background-color: #FAFAFA;
 }
 
 .spa-bg {
@@ -14433,7 +14433,7 @@ textarea.form-control {
 
 .woocommerce-tabs .woocommerce-Reviews .review-form {
   margin-top: 40px;
-  background-color: #FEF6F8;
+  background-color: #FAFAFA;
   padding: 40px 45px 45px;
 }
 
@@ -14705,7 +14705,7 @@ textarea.form-control {
 
 .single-price {
   text-align: center;
-  background-color: #FEF6F8;
+  background-color: #FAFAFA;
   background-image: url(../img/bg/price-bg.png);
   margin-bottom: 30px;
 }
@@ -14966,7 +14966,7 @@ textarea.form-control {
   right: 0;
   bottom: 0;
   width: 80%;
-  background-color: rgba(248, 23, 129, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 28px 30px 26px;
   -webkit-transform: translate(100%, 100%);
   -ms-transform: translate(100%, 100%);

@@ -33,7 +33,7 @@
    }
 
    .section-bg {
-      background-color: #FEF6F8;
+      background-color: #FAFAFA;
    }
 
    .spa-bg {
@@ -908,7 +908,7 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            border: 1px dashed rgba(#173B61, .3);
+            border: 1px dashed rgba(#E2E2E2, .3);
             font-size: 16px;
             @extend %heading-font;
             @extend %title-color;

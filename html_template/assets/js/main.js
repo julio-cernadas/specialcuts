@@ -109,15 +109,15 @@ We may release future updates so it will overwrite this file. it's better and sa
   02: Sticky Nav
   ==========================*/
 
-  // $(window).on("scroll", function () {
-  //   var scroll = $(window).scrollTop();
-  //
-  //   if (scroll < 180) {
-  //     $(".header-main.love-sticky").removeClass("sticky fixed-top fadeInDown animated");
-  //   } else {
-  //     $(".header-main.love-sticky").addClass("sticky fixed-top fadeInDown animated");
-  //   }
-  // });
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll < 110) {
+      $(".header-main.love-sticky").removeClass("sticky fixed-top fadeInDown animated");
+    } else {
+      $(".header-main.love-sticky").addClass("sticky fixed-top fadeInDown animated");
+    }
+  });
   /*========================
   03: Background Image
   ==========================*/
@@ -363,7 +363,7 @@ We may release future updates so it will overwrite this file. it's better and sa
       e.preventDefault();
       $('html,body').animate({
         scrollTop: 0
-      }, 700);
+      }, 50);
     });
   }
   /*==================================
@@ -395,7 +395,7 @@ We may release future updates so it will overwrite this file. it's better and sa
       animateIn: checkData($t.data('owl-animate-in'), false),
       animateOut: checkData($t.data('owl-animate-out'), false),
       nav: checkData($t.data('owl-nav'), false),
-      navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="15.676" height="8.564" viewBox="0 0 15.676 8.564" class="svg replaced-svg"><path id="long-arrow-left" d="M15.187,297.225H2.687l2.342,2.342a.713.713,0,0,1-1.009,1.009L1.887,298.44.464,297.014a.712.712,0,0,1,0-1L4.02,292.45a.713.713,0,1,1,1.009,1.009L2.682,295.8H15.224a.713.713,0,1,1-.037,1.425Z" transform="translate(-0.257 -292.234)" fill="#173b61"></path> </svg>', '<svg xmlns="http://www.w3.org/2000/svg" id="long-arrow-right" width="15.676" height="8.563" viewBox="0 0 15.676 8.563" class="svg replaced-svg"><path id="path9413" d="M1,297.225H13.5l-2.342,2.342a.713.713,0,0,0,1.009,1.009L14.3,298.44l1.424-1.426a.712.712,0,0,0,0-1l-3.557-3.561a.713.713,0,1,0-1.009,1.009l2.347,2.342H.965A.713.713,0,1,0,1,297.225Z" transform="translate(-0.257 -292.234)" fill="#173b61"></path></svg>'],
+      navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="15.676" height="8.564" viewBox="0 0 15.676 8.564" class="svg replaced-svg"><path id="long-arrow-left" d="M15.187,297.225H2.687l2.342,2.342a.713.713,0,0,1-1.009,1.009L1.887,298.44.464,297.014a.712.712,0,0,1,0-1L4.02,292.45a.713.713,0,1,1,1.009,1.009L2.682,295.8H15.224a.713.713,0,1,1-.037,1.425Z" transform="translate(-0.257 -292.234)" fill="#000000"></path> </svg>', '<svg xmlns="http://www.w3.org/2000/svg" id="long-arrow-right" width="15.676" height="8.563" viewBox="0 0 15.676 8.563" class="svg replaced-svg"><path id="path9413" d="M1,297.225H13.5l-2.342,2.342a.713.713,0,0,0,1.009,1.009L14.3,298.44l1.424-1.426a.712.712,0,0,0,0-1l-3.557-3.561a.713.713,0,1,0-1.009,1.009l2.347,2.342H.965A.713.713,0,1,0,1,297.225Z" transform="translate(-0.257 -292.234)" fill="#000000"></path></svg>'],
       dots: checkData($t.data('owl-dots'), false),
       stagePadding: checkData($t.data('owl-stage-padding'), false),
       autoWidth: checkData($t.data('owl-auto-width'), false),
@@ -410,35 +410,29 @@ We may release future updates so it will overwrite this file. it's better and sa
       items: 1,
       loop: true,
       autoplay: true,
-      smartSpeed: 250,
+      smartSpeed: 500,
       autoplayTimeout: 5000,
       nav: true,
       dots: false,
-      animateIn: 'fadeIn',
-      animateOut: 'fadeOut',
-      navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="15.676" height="8.564" viewBox="0 0 15.676 8.564" class="svg replaced-svg"><path id="long-arrow-left" d="M15.187,297.225H2.687l2.342,2.342a.713.713,0,0,1-1.009,1.009L1.887,298.44.464,297.014a.712.712,0,0,1,0-1L4.02,292.45a.713.713,0,1,1,1.009,1.009L2.682,295.8H15.224a.713.713,0,1,1-.037,1.425Z" transform="translate(-0.257 -292.234)" fill="#173b61"></path> </svg>', '<svg xmlns="http://www.w3.org/2000/svg" id="long-arrow-right" width="15.676" height="8.563" viewBox="0 0 15.676 8.563" class="svg replaced-svg"><path id="path9413" d="M1,297.225H13.5l-2.342,2.342a.713.713,0,0,0,1.009,1.009L14.3,298.44l1.424-1.426a.712.712,0,0,0,0-1l-3.557-3.561a.713.713,0,1,0-1.009,1.009l2.347,2.342H.965A.713.713,0,1,0,1,297.225Z" transform="translate(-0.257 -292.234)" fill="#173b61"></path></svg>'],
-      onInitialized: startProgressBar,
-      onTranslate: resetProgressBar,
-      onTranslated: startProgressBar
+      navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="15.676" height="8.564" viewBox="0 0 15.676 8.564" class="svg replaced-svg"><path id="long-arrow-left" d="M15.187,297.225H2.687l2.342,2.342a.713.713,0,0,1-1.009,1.009L1.887,298.44.464,297.014a.712.712,0,0,1,0-1L4.02,292.45a.713.713,0,1,1,1.009,1.009L2.682,295.8H15.224a.713.713,0,1,1-.037,1.425Z" transform="translate(-0.257 -292.234)" fill="#000000"></path> </svg>', '<svg xmlns="http://www.w3.org/2000/svg" id="long-arrow-right" width="15.676" height="8.563" viewBox="0 0 15.676 8.563" class="svg replaced-svg"><path id="path9413" d="M1,297.225H13.5l-2.342,2.342a.713.713,0,0,0,1.009,1.009L14.3,298.44l1.424-1.426a.712.712,0,0,0,0-1l-3.557-3.561a.713.713,0,1,0-1.009,1.009l2.347,2.342H.965A.713.713,0,1,0,1,297.225Z" transform="translate(-0.257 -292.234)" fill="#000000"></path></svg>']
     });
   }
 
-  function startProgressBar() {
-    $(".circular-progress circle:nth-of-type(2)").css({
-      'stroke-dashoffset': 0,
-      transition: "4000ms linear"
-    });
-  }
+  $('.owl-prev').on('click', function(e) {
+    $('.owl-carousel').trigger('stop.owl.autoplay');
+    var carousel = $('.owl-carousel').data('owl.carousel');
+    carousel.settings.autoplay = false; //don't know if both are necessary
+    carousel.options.autoplay = false;
+    $('.owl-carousel').trigger('refresh.owl.carousel');
+  })
+  $('.owl-next').on('click', function(e) {
+    $('.owl-carousel').trigger('stop.owl.autoplay');
+    var carousel = $('.owl-carousel').data('owl.carousel');
+    carousel.settings.autoplay = false; //don't know if both are necessary
+    carousel.options.autoplay = false;
+    $('.owl-carousel').trigger('refresh.owl.carousel');
+  })
 
-  function resetProgressBar() {
-    $(".circular-progress circle:nth-of-type(2)").css({
-      'stroke-dashoffset': 251.429,
-      transition: "0s"
-    });
-  } //Slider Nav Push Icon
-
-
-  $('.banner-slider.owl-carousel').find('.owl-nav .owl-next').append('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="graphic" class="circular-progress"><circle cx="50" cy="50" r="40"></circle><circle cx="50" cy="50" r="40" id="pct-ind"></circle></svg>');
   $('.testimonial-carousel2.owl-carousel').find('.owl-nav .owl-prev').html('<img src="assets/img/icon/left-angle.svg" alt="" class="svg">');
   $('.testimonial-carousel2.owl-carousel').find('.owl-nav .owl-next').html('<img src="assets/img/icon/right-angle.svg" alt="" class="svg">'); //Banner slider 2 bottom shape
 
@@ -461,7 +455,7 @@ We may release future updates so it will overwrite this file. it's better and sa
   ====================================*/
 
   $(window).on('load', function () {
-    $('.preloader').fadeOut(1000);
+    $('.preloader').fadeOut(200);
   });
   /*==================================
   12: Countdown Timer
