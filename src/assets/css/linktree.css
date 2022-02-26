@@ -1,15 +1,15 @@
 body {
     height: 100vh;
     color: #fff;
-    background: linear-gradient(-45deg, #EE7752, #563ce7, #23A6D5, #23D5AB);
+    background: linear-gradient(-45deg, #ee8952, #833ce7, #235ed5, #23c0d5);
     background-size: 400% 400%;
-    -webkit-animation: Gradient 13s ease infinite;
-    -moz-animation: Gradient 13s ease infinite;
-    animation: Gradient 13s ease infinite;
+    -webkit-animation: Gradient 21s ease infinite;
+    -moz-animation: Gradient 21s ease infinite;
+    animation: Gradient 21s ease infinite;
 }
 
 footer {
-    min-height: 45px;
+    min-height: 40px;
 }
 
 body {
