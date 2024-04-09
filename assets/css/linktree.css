@@ -1,0 +1,149 @@
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee8952, #833ce7, #235ed5, #23c0d5);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 24s ease infinite;
+    -moz-animation: Gradient 24s ease infinite;
+    animation: Gradient 24s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff; /* Adjust the border width and color as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /* Optional: Add a subtle shadow */
+}
+
+.profile-image img {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    min-height: 40px;
+}
+
+
+.footer-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin-top: auto;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+h1,
+h6 {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+}
+
+.shake {
+    animation: shake-animation 4.72s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+.element {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background: red;
+}
+
+@keyframes shake-animation {
+    0% {
+        transform: translate(0, 0)
+    }
+    1% {
+        transform: translate(10px, 0)
+    }
+    3% {
+        transform: translate(0, 0)
+    }
+    5% {
+        transform: translate(10px, 0)
+    }
+    7% {
+        transform: translate(0, 0)
+    }
+    9% {
+        transform: translate(10px, 0)
+    }
+    11% {
+        transform: translate(0, 0)
+    }
+    15% {
+        transform: translate(10px, 0)
+    }
+    19% {
+        transform: translate(0px, 0)
+    }
+    30% {
+        transform: translate(10px, 0)
+    }
+    40% {
+        transform: translate(0px, 0)
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+}

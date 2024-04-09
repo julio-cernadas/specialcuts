@@ -1,0 +1,257 @@
+.header {
+    background-color: #05386D;
+    font-size: 13px;
+}
+
+.hz-list li .number {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.header-top {
+    padding: 1px 0;
+}
+
+.hz-list li {
+    color: #FFFFFF;
+}
+
+.hz-list li span {
+    color: #FFFFFF;
+    top: 80%;
+}
+
+.social-links i{
+    color: #FFFFFF;
+}
+
+.hz-list li:not(:last-child):after {
+    background-color: #FFFFFF;
+    top: 46%;
+}
+
+.footer-main {
+    background-color: #FFFFFF;
+    padding: 60px 0 0px;
+    border-top: 1px solid #E2E2E2;
+}
+
+/* Desktop Only */
+@media screen and (max-width: 650px) {
+    .desktop-only {
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+    }
+    .footer-main {
+        padding: 60px 20px 0px 20px;
+    }
+}
+
+.price-margin {
+    margin: 0 2% 0 2%;
+}
+
+/* Desktop Only 2 */
+@media screen and (min-width: 649px) {
+    .main-logo.svg {
+        max-width: 75%;
+    }
+
+    .sticky-logo.svg {
+        max-width: 75%;
+    }
+    .price-margin {
+        margin: 0 6% 0 6%;
+    }
+}
+
+.row {
+    margin-right: calc(var(--bs-gutter-x) / -4);
+    margin-left: calc(var(--bs-gutter-x) / -4);
+}
+
+.header-main {
+    min-height: 75px;
+    height: 75px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.header-main ul li a.current-menu-parent {
+    color: #05386d;
+}
+
+.banner-slider .banner-single-slide {
+    box-shadow:inset 0 0 0 2000px rgba(5, 56, 109, 0.05);
+    background-position: center;
+}
+
+.banner-white-text {
+    color: #FFFFFF;
+}
+
+.banner-gray-text {
+    color: #B4B3BD;
+}
+
+.banner-blue-text {
+    color: #05386D;
+}
+
+.btn {
+    background: #05386D;
+}
+
+.row.align-items-center.banner-right-align {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+::-moz-selection {
+  text-shadow: none;
+  color: #ffffff;
+  background-color: #05386D !important;
+}
+
+::selection {
+  text-shadow: none;
+  color: #ffffff;
+  background-color: #05386D !important;
+}
+
+.section-title.style--three .subtitle2:after {
+    background-color: #05386D;
+}
+
+.single-feature .icon svg {
+    width: 75px;
+    height: 75px
+}
+
+.single-feature.active .icon svg path {
+    fill: #05386D;
+}
+
+.single-price {
+    background-color: #05386D;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.single-price.active {
+    background-color: #05386D;
+}
+
+.single-price .price-head {
+    border-bottom: 0px solid #ffffff;
+    padding: 28px 15px;
+    position: unset;
+}
+
+.single-price .price-head h3 {
+    color: #FFFFFF;
+}
+
+.single-price .price-head h4 {
+    color: #FFFFFF;
+}
+
+.single-price .price-body {
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.single-price .price-body .btn {
+    background-color: #FFFFFF;
+    color: #0b0b0b;
+}
+
+.single-price.active .price-body .btn {
+    background-color: #FFFFFF;
+    color: #0b0b0b;
+}
+
+.single-price .price-body .btn svg path {
+    fill: #05386D;
+}
+
+.single-price .price-body .btn svg g {
+    stroke: #05386D;
+}
+
+.single-price.active .price-body .btn svg path {
+    fill: #05386D;
+}
+
+.single-price.active .price-body .btn svg g {
+    stroke: #05386D;
+}
+
+.section-title .subtitle {
+    color: #000000;
+}
+
+.section-title .subtitle:after {
+    background-color: #05386D;
+}
+
+.back-to-top.show {
+    background-color: #05386D;
+}
+
+.newsletter-pic {
+    background-position: bottom;
+    box-shadow:inset 0 0 0 2000px rgba(5, 56, 109, 0.05)
+}
+
+.newsletter-content h2 {
+    color: #000000;
+}
+
+.newsletter-content h3 {
+    color: #949494;
+}
+
+.single-price.active {
+  background-image: None
+}
+
+.page-title-wrap {
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(5, 56, 109, 0.05);
+    min-height: 450px;
+}
+
+.pl-item {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 1px solid white;
+    font-weight: bold;
+}
+
+.pl-item-last {
+    border-bottom: 1px solid white;
+    margin-bottom: 0px;
+}
+
+.price-box {
+    margin-bottom: 30px;
+}
+
+.quick-contact {
+    -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 991px) {
+    .quick-contact {
+        margin-bottom: 30px;
+    }
+}
+
+.button.owl-prev {
+    fill: #FFFFFF;
+}

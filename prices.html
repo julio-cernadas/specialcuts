@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page Title -->
+    <title>Specialcuts | Hairstyles. Haircuts. Experience.</title>
+
+    <!-- Meta Data -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Preloader CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spinkit/1.2.5/spinkit.min.css">
+
+    <style>
+        body, html {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #FAFAFA;
+        }
+
+        .owl-wrapper {
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+        /* Ensure images fill the carousel */
+        .owl-carousel img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        #preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: #FAFAFA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            background-color: #05386D;
+            border-radius: 100%;
+            position: relative;
+            animation: sk-scaleout 1.0s infinite ease-in-out;
+        }
+
+        @keyframes sk-scaleout {
+            0% { transform: scale(0) }
+            100% {
+                opacity: 0;
+                transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+         <div class="spinner"></div>
+     </div>
+
+    <div class="owl-wrapper">
+        <div class="owl-carousel">
+            <div class="item"><img src="assets/img/prices-1.jpg" alt="Image 1"></div>
+            <div class="item"><img src="assets/img/prices-2.jpg" alt="Image 2"></div>
+            <div class="item"><img src="assets/img/prices-3.jpg" alt="Image 3"></div>
+            <div class="item"><img src="assets/img/prices-4.jpg" alt="Image 4"></div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Owl Carousel's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Preloader JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/preloader/2.0.4/js/preloader.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Hide preloader when content is loaded
+            $('#preloader').fadeOut('slow');
+
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 10000, // Change slide every 10 seconds
+                autoplayHoverPause: false,
+                nav: false,
+                dots: false
+            });
+        });
+    </script>
+</body>
+</html>
